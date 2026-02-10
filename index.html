@@ -1,184 +1,607 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Construction Services | General Contractor</title>
-  <meta name="description" content="Real Construction Services provides construction, restoration, and facility maintenance across SC, NC, TN, and GA.">
-
-  <!-- Production Tailwind Build -->
-  <link rel="stylesheet" href="/assets/css/tailwind.css">
-
-  <!-- Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Construction Services | General Contractor</title>
+    <meta name="description" content="Real Construction Services is a general contracting company providing construction, restoration, and facility maintenance services across SC, NC, TN, and GA.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
+<body class="antialiased selection:bg-blue-100 selection:text-blue-900 bg-white text-slate-600 text-lg">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full border-b backdrop-blur-md border-slate-100 bg-white/90">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="flex h-20 items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="flex items-center gap-3">
+            </a><a href="#" class="flex items-center gap-3">
+  <img src="logo.png" alt="Real Construction Services Logo" class="h-14 w-auto">
+</a>
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#about" class="text-base font-normal transition-colors text-slate-600 hover:text-slate-900">
+              About Us
+            </a>
+            <a href="#services" class="text-base font-normal transition-colors text-slate-600 hover:text-slate-900">
+              Services
+            </a>
+            <a href="#who-we-serve" class="text-base font-normal transition-colors text-slate-600 hover:text-slate-900">
+              Who We Serve
+            </a>
+            <a href="#financing" class="text-base font-normal transition-colors text-slate-600 hover:text-slate-900">
+              Financing
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-base font-medium shadow-sm transition-colors bg-slate-900 text-white hover:bg-slate-800">
+              Contact Us
+            </a>
+          </div>
 
-<body class="antialiased bg-white text-slate-600">
-
-<nav class="sticky top-0 z-50 border-b backdrop-blur bg-white/80">
-  <div class="mx-auto max-w-7xl px-6 flex h-20 items-center justify-between">
-
-    <img src="/assets/images/rcs-logo.png" alt="Real Construction Services Logo" class="h-14 w-auto">
-
-    <div class="hidden md:flex items-center gap-8">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#who-we-serve">Who We Serve</a>
-      <a href="#financing">Financing</a>
-      <a href="#contact" class="bg-slate-900 text-white px-4 py-2 rounded-lg">Contact</a>
-    </div>
-
-    <button id="menuBtn" class="md:hidden" aria-label="Open Menu">
-      <i data-lucide="menu" aria-hidden="true"></i>
-    </button>
-  </div>
-
-  <!-- Mobile Panel -->
-  <div id="mobileMenu" class="hidden px-6 pb-6 space-y-4 bg-white">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#who-we-serve">Who We Serve</a>
-    <a href="#financing">Financing</a>
-    <a href="#contact" class="block bg-slate-900 text-white px-4 py-2 rounded-lg text-center">Contact</a>
-  </div>
-</nav>
-
-<main>
-
-<section aria-labelledby="hero-heading" class="pt-20 pb-32">
-  <div class="max-w-7xl mx-auto px-6">
-    <h1 id="hero-heading" class="text-5xl md:text-7xl font-semibold text-slate-900 mb-8">
-      General Contracting & Construction Services
-    </h1>
-    <p class="text-xl text-slate-500 mb-10 max-w-3xl">
-      Real Construction Services delivers scalable construction, maintenance, and compliance solutions.
-    </p>
-    <a href="tel:866-813-0920" class="bg-blue-600 text-white px-6 py-4 rounded-lg inline-flex gap-2 items-center">
-      <i data-lucide="phone" aria-hidden="true"></i>
-      Call 866-813-0920
-    </a>
-  </div>
-</section>
-
-<section id="about" aria-labelledby="about-heading" class="py-24 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-
-    <div>
-      <h2 id="about-heading" class="text-4xl font-semibold text-slate-900 mb-6">
-        Built on Experience. Driven by Results.
-      </h2>
-      <p class="text-lg mb-4">
-        Founded on over 30 years of construction and development experience.
-      </p>
-      <ul class="space-y-3 mt-6">
-        <li class="flex items-center gap-3">
-          <i data-lucide="check-circle-2" aria-hidden="true"></i> Transparent communication
-        </li>
-        <li class="flex items-center gap-3">
-          <i data-lucide="check-circle-2" aria-hidden="true"></i> Timely completion
-        </li>
-      </ul>
-    </div>
-
-    <img src="/assets/images/elisha-sellers-profile.jpg"
-         alt="Owner of Real Construction Services"
-         class="rounded-2xl shadow-lg object-cover">
-  </div>
-</section>
-
-<section id="services" aria-labelledby="services-heading" class="py-24">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 id="services-heading" class="text-4xl font-semibold mb-12 text-slate-900">
-      Construction & Facility Solutions
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="border rounded-2xl p-8">
-        <i data-lucide="building-2" aria-hidden="true"></i>
-        <h3 class="text-xl font-semibold mt-4">Government Contracts</h3>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button class="text-slate-900">
+              <i data-lucide="menu" width="24" height="24" stroke-width="1.5"></i>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="border rounded-2xl p-8">
-        <i data-lucide="hammer" aria-hidden="true"></i>
-        <h3 class="text-xl font-semibold mt-4">New Construction</h3>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="overflow-hidden md:pt-36 md:pb-44 pt-20 pb-28 relative bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-cover bg-center">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-white/90 backdrop-blur-[2px]"></div>
+      
+      <div class="mx-auto max-w-7xl px-6 relative z-10">
+        <div class="max-w-4xl">
+          <!-- Tagline Badge -->
+          <div class="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 mb-10 border-blue-200 bg-blue-50/80 backdrop-blur-sm">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 bg-blue-400"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-600"></span>
+            </span>
+            <span class="text-xs font-medium uppercase tracking-wide text-blue-800">
+              Serving SC, NC, TN, &amp; GA
+            </span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] mb-10 text-slate-900">
+            General Contracting &amp; Construction Services
+          </h1>
+
+          <p class="text-xl md:text-2xl text-slate-600 leading-relaxed mb-12 max-w-3xl font-light">
+            Real Construction Services (RCS) delivers scalable construction
+            solutions, from ground-up builds to facility maintenance and safety
+            consulting.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+            <a href="tel:866-813-0920" class="inline-flex items-center justify-center gap-2.5 rounded-lg px-8 py-4 text-lg font-medium shadow-sm transition-all w-full sm:w-auto bg-blue-600 text-white hover:bg-blue-700">
+              <i data-lucide="phone" width="22" height="22" stroke-width="1.5"></i>
+              Call 866-813-0920
+            </a>
+            <a href="#financing" class="inline-flex items-center justify-center gap-2.5 rounded-lg border px-8 py-4 text-lg font-medium transition-all w-full sm:w-auto border-slate-300 bg-white/80 backdrop-blur-sm text-slate-700 hover:border-slate-400 hover:bg-white">
+              <i data-lucide="wallet" width="22" height="22" stroke-width="1.5"></i>
+              View Financing Options
+            </a>
+          </div>
+        </div>
+
+        <!-- Certifications & Logos -->
+        <div class="mt-24 border-t pt-12 border-slate-200/60">
+          <p class="text-sm font-medium uppercase tracking-wider mb-8 text-slate-500">
+            Certifications &amp; Registrations
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-10 items-center opacity-90 hover:opacity-100 transition-all duration-500">
+            <!-- WBENC Logo Placeholder -->
+            <div class="flex items-center gap-4">
+              <div class="flex items-center justify-center h-14 w-14 rounded border bg-white border-slate-200 text-slate-400">
+                <i data-lucide="award" width="28" height="28" stroke-width="1.5"></i>
+              </div>
+              <span class="font-medium tracking-tight leading-tight text-slate-900 text-base">
+                WBENC
+                <br>
+                Certified
+              </span>
+            </div>
+            <!-- WOSB Logo Placeholder -->
+            <div class="flex items-center gap-4">
+               <div class="flex items-center justify-center h-14 w-14 rounded border bg-white border-slate-200 text-slate-400">
+                <i data-lucide="briefcase" width="28" height="28" stroke-width="1.5"></i>
+              </div>
+              <span class="font-medium tracking-tight leading-tight text-slate-900 text-base">
+                WOSB
+                <br>
+                Registered
+              </span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="flex items-center justify-center h-14 w-14 rounded border bg-blue-50 border-blue-100 text-blue-600">
+                <i data-lucide="shield-check" width="22" height="22" stroke-width="1.5" class="mt-1 text-slate-400"></i>
+              </div>
+              <span class="font-medium tracking-tight leading-tight text-slate-900 text-base">
+                Licensed
+                <br>
+                GC
+              </span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="flex items-center justify-center h-14 w-14 rounded border bg-blue-50 border-blue-100 text-blue-600">
+                <i data-lucide="hard-hat" width="36" height="36" stroke-width="1.5" class="mb-4 text-slate-900 group-hover:text-blue-600 transition-colors"></i>
+              </div>
+              <span class="font-medium tracking-tight leading-tight text-slate-900 text-base">
+                OSHA 30
+                <br>
+                Certified
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="border rounded-2xl p-8">
-        <i data-lucide="wrench" aria-hidden="true"></i>
-        <h3 class="text-xl font-semibold mt-4">Facility Maintenance</h3>
+    </section>
+
+    <!-- About Section -->
+    <section class="pt-28 pb-28 bg-slate-50" id="about">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid lg:grid-cols-2 gap-16 gap-x-20 gap-y-16 items-start">
+          <!-- Content -->
+          <div class="">
+            <div class="flex items-center gap-2 mb-6">
+              <span class="px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-wide bg-blue-100 text-blue-800">
+                Woman-Owned Business
+              </span>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-8 text-slate-900 leading-tight">
+              Built on Experience.
+              <br>
+              <span class="text-slate-400">Driven by Results.</span>
+            </h2>
+            <div class="space-y-8 text-xl text-slate-600 font-light">
+              <p class="">Founded on more than 30 years of construction, property management, and real estate development/investment experience, Real Construction Services was built to solve problems others can’t — with clear communication, dependable timelines, and accountable execution.</p>
+              <p class="">Our leadership team brings 16 years of staffing and workforce development experience, allowing RCS to scale crews and resources efficiently across multiple states.</p>
+            </div>
+
+            <ul class="mt-10 space-y-4">
+              <li class="flex gap-4 text-xl items-center text-slate-800">
+                <i data-lucide="check-circle-2" width="24" height="24" stroke-width="1.5" class="text-blue-600"></i>
+                Transparent communication
+              </li>
+              <li class="flex items-center gap-4 text-xl text-slate-800">
+                <i data-lucide="check-circle-2" width="24" height="24" stroke-width="1.5" class="text-blue-600"></i>
+                Timely project completion
+              </li>
+              <li class="flex gap-4 text-xl items-center text-slate-800">
+                <i data-lucide="check-circle-2" width="24" height="24" stroke-width="1.5" class="text-blue-600"></i>
+                Safety-driven operations (OSHA 30)
+              </li>
+            </ul>
+          </div>
+
+          <!-- Owner Image & Stats -->
+          <div class="relative">
+            <!-- New Construction/Owner Photo -->
+            <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden border shadow-xl mb-8 bg-slate-200 border-slate-200">
+              <img src="https://images.unsplash.com/photo-1590649880765-91b1956b8276?q=80&w=2070&auto=format&fit=crop" alt="Female Construction Manager reviewing plans on site" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-2 gap-6">
+              <div class="rounded-xl p-8 border shadow-sm bg-white border-slate-100 group hover:border-blue-200 transition-colors">
+                <i data-lucide="hard-hat" width="36" height="36" stroke-width="1.5" class="mb-4 text-slate-900 group-hover:text-blue-600 transition-colors"></i>
+                <span class="block text-4xl font-semibold tracking-tight text-slate-900 mb-1">
+                  30+
+                </span>
+                <span class="uppercase text-xs font-medium text-slate-500 tracking-wide">Construction Years Experience</span>
+              </div>
+              <div class="rounded-xl p-8 shadow-sm text-white bg-slate-900 group hover:bg-slate-800 transition-colors">
+                <i data-lucide="users" width="36" height="36" stroke-width="1.5" class="mb-4 text-white"></i>
+                <span class="block text-4xl font-semibold tracking-tight text-white mb-1">16+</span>
+                <span class="uppercase text-xs font-medium tracking-wide text-slate-300">Providing Scalable Solutions </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="who-we-serve" aria-labelledby="serve-heading" class="py-24 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 id="serve-heading" class="text-4xl font-semibold mb-8 text-slate-900">
-      Who We Serve
-    </h2>
+    <!-- Services Grid -->
+    <section id="services" class="py-28">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="mb-20">
+          <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-6 text-slate-900">
+            Construction &amp; Facility Solutions
+          </h2>
+          <p class="text-2xl text-slate-500 max-w-3xl font-light">
+            RCS provides end-to-end construction services for public and private
+            sector clients, including specialized OSHA compliance training.
+          </p>
+        </div>
 
-    <ul class="grid sm:grid-cols-2 gap-4 text-lg">
-      <li>Government Agencies</li>
-      <li>General Contractors</li>
-      <li>Property Managers</li>
-      <li>Property Owners</li>
-    </ul>
-  </div>
-</section>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Service Card: Government Contracts -->
+          <div class="group rounded-2xl border p-10 hover:shadow-md transition-all relative overflow-hidden border-blue-100 bg-blue-50/50 hover:border-blue-300">
+            <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 bg-blue-100 border-blue-200 text-blue-700">
+              <i data-lucide="building-2" width="28" height="28" stroke-width="1.5"></i>
+            </div>
+            <h3 class="text-2xl font-medium mb-4 tracking-tight text-slate-900">
+              Government Contracts
+            </h3>
+            <p class="text-xl leading-relaxed mb-6 text-slate-600 font-light">
+              Registered State and Federal general contract solutions. We handle
+              RFPs, RFQs, and bid-based work with full compliance.
+            </p>
+            <div class="flex gap-3 text-sm font-medium uppercase tracking-wide text-blue-800">
+              <span>• WOSB Registered</span>
+              <span>• Federal &amp; State</span>
+            </div>
+          </div>
 
-<section id="financing" aria-labelledby="finance-heading" class="py-24 bg-blue-600 text-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 id="finance-heading" class="text-4xl font-semibold mb-6">
-      Financing Available
-    </h2>
-    <p class="text-xl">
-      Residential up to $500,000 — Commercial up to $1,000,000
-    </p>
-  </div>
-</section>
+          <!-- Service Card: OSHA (Value Added) -->
+          <div class="group hover:shadow-md transition-all border rounded-2xl p-10 hover:border-slate-400 text-white bg-slate-900 border-slate-200">
+            <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 bg-slate-800 border-slate-700 text-white">
+              <i data-lucide="shield-check" width="22" height="22" stroke-width="1.5" class="mt-1 text-slate-400"></i>
+            </div>
+            <h3 class="text-2xl font-medium mb-4 tracking-tight text-white">
+              OSHA 30 Services
+            </h3>
+            <p class="text-xl leading-relaxed text-slate-300 font-light">
+              Value-added construction service providing on-demand OSHA 30
+              onsite services and safety certifications for other GC companies.
+            </p>
+          </div>
 
-<section id="contact" aria-labelledby="contact-heading" class="py-24">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 id="contact-heading" class="text-4xl font-semibold mb-6 text-slate-900">
-      Let’s Build the Right Solution
-    </h2>
-    <a href="tel:866-813-0920" class="bg-blue-600 text-white px-8 py-4 rounded-lg inline-flex gap-2">
-      <i data-lucide="phone" aria-hidden="true"></i>
-      866-813-0920
-    </a>
-  </div>
-</section>
+          <!-- Service Card: Commercial -->
+          <div class="group rounded-2xl border p-10 hover:shadow-md transition-all border-slate-200 hover:border-slate-300 bg-white">
+            <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 group-hover:bg-blue-50 group-hover:border-blue-100 transition-colors bg-slate-50 border-slate-100">
+              <i data-lucide="building" width="28" height="28" stroke-width="1.5" class="group-hover:text-blue-600 text-slate-700"></i>
+            </div>
+            <h3 class="text-2xl font-medium mb-4 tracking-tight text-slate-900">
+              Commercial Construction
+            </h3>
+            <p class="text-xl text-slate-500 leading-relaxed font-light">
+              Integrated construction services supporting commercial
+              development, property managers, and business owners.
+            </p>
+          </div>
 
-</main>
+          <!-- Service Card: Residential & Property Owners -->
+          <div class="group hover:shadow-md transition-all border rounded-2xl p-10 hover:border-slate-400 text-white bg-slate-900 border-slate-200">
+             <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 transition-colors bg-slate-800 border-slate-700 text-white">
+                <i data-lucide="home" width="28" height="28" stroke-width="1.5"></i>
+             </div>
+              <h3 class="text-2xl font-medium tracking-tight mb-4 text-white">
+                Residential &amp; Owners
+              </h3>
+              <p class="text-xl leading-relaxed text-slate-300 font-light">
+                Services for Residential and Commercial Property Owners including
+                new builds, additions, and comprehensive renovations.
+              </p>
+            </div>
 
-<footer class="border-t py-12">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-    <img src="/assets/images/rcs-logo.png" alt="RCS Logo" class="h-10">
+          <!-- Service Card: New Construction -->
+          <div class="group rounded-2xl border p-10 hover:shadow-md transition-all border-slate-200 hover:border-slate-300 bg-white">
+            <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 group-hover:bg-blue-50 group-hover:border-blue-100 transition-colors bg-slate-50 border-slate-100">
+              <i data-lucide="hammer" width="28" height="28" stroke-width="1.5" class="group-hover:text-blue-600 text-slate-700"></i>
+            </div>
+            <h3 class="text-2xl font-medium mb-4 tracking-tight text-slate-900">
+              New Construction
+            </h3>
+            <p class="text-xl text-slate-500 leading-relaxed font-light">
+              Ground-up construction services for multi-family projects and
+              developments, delivered with precision planning.
+            </p>
+          </div>
 
-    <p>Serving the Southeast with dependable construction solutions.</p>
+          <!-- Service Card: Reconstruction -->
+          <div class="group rounded-2xl border p-10 hover:shadow-md transition-all relative overflow-hidden border-blue-100 bg-blue-50/50 hover:border-blue-300">
+            <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 bg-blue-100 border-blue-200 text-blue-700">
+              <i data-lucide="refresh-ccw" width="28" height="28" stroke-width="1.5"></i>
+            </div>
+            <h3 class="text-2xl font-medium mb-4 tracking-tight text-slate-900">
+              Reconstruction
+            </h3>
+            <p class="text-xl text-slate-500 leading-relaxed font-light">
+              Structural and interior renovations designed to restore, upgrade,
+              and enhance existing properties and assets.
+            </p>
+          </div>
 
-    <p>866-813-0920</p>
-  </div>
-</footer>
+          <!-- Service Card: Facility Maintenance -->
+          <div class="group rounded-2xl border p-10 hover:shadow-md transition-all border-slate-200 hover:border-slate-300 bg-white">
+            <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 group-hover:bg-blue-50 group-hover:border-blue-100 transition-colors bg-slate-50 border-slate-100">
+              <i data-lucide="wrench" width="28" height="28" stroke-width="1.5" class="group-hover:text-blue-600 text-slate-700"></i>
+            </div>
+            <h3 class="text-2xl font-medium mb-4 tracking-tight text-slate-900">
+              Facility Maintenance
+            </h3>
+            <p class="text-xl text-slate-500 leading-relaxed font-light">
+              Ongoing maintenance programs, preventative care, and repairs for
+              commercial and institutional facilities.
+            </p>
+          </div>
 
-<noscript>
-  <style>i[data-lucide]{display:none}</style>
-</noscript>
+          <!-- Service Card: Set-Outs -->
+          <div class="group rounded-2xl border p-10 hover:shadow-md transition-all relative overflow-hidden border-blue-100 bg-blue-50/50 hover:border-blue-300">
+            <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 bg-blue-100 border-blue-200 text-blue-700">
+                <i data-lucide="trash-2" width="28" height="28" stroke-width="1.5"></i>
+            </div>
+            <h3 class="text-2xl font-medium mb-4 tracking-tight text-slate-900">
+                Set-Outs &amp; Clean-Outs
+            </h3>
+            <p class="text-xl leading-relaxed mb-6 text-slate-600 font-light">
+                Efficient preparation and turnover services for vacant units,
+                facilities, and properties.
+            </p>
+            <div class="flex gap-3 text-sm font-medium uppercase tracking-wide text-blue-800">
+                <span>• Adjustable Schedule</span>
+                <span>• Day &amp; Night</span>
+            </div>
+          </div>
 
-<script>
-  lucide.createIcons();
+          <!-- Service Card: Commercial Cleaning -->
+          <div class="group hover:shadow-md transition-all border rounded-2xl p-10 hover:border-slate-400 text-white bg-slate-900 border-slate-200">
+            <div class="h-14 w-14 rounded-xl border flex items-center justify-center mb-8 bg-slate-800 border-slate-700 text-white">
+              <i data-lucide="sparkles" width="28" height="28" stroke-width="1.5"></i>
+            </div>
+            <h3 class="text-2xl font-medium tracking-tight mb-4 text-white">
+              Commercial Cleaning Services
+            </h3>
+            <p class="leading-relaxed text-xl mb-6 text-slate-300 font-light">Cleaning Services offered to Multi-Family &amp; Property Managers along with businesses seeking ongoing service agreements.</p>
+            <div class="flex gap-3 text-sm font-medium uppercase tracking-wide text-blue-300">
+              <span class="">• Adjustable Schedule</span>
+              <span class="">• Day &amp; Night</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  const btn = document.getElementById('menuBtn');
-  const menu = document.getElementById('mobileMenu');
+    <!-- Who We Serve -->
+    <section id="who-we-serve" class="py-28 border-t border-slate-100 bg-slate-50">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid md:grid-cols-2 gap-16">
+          <div class="">
+            <h2 class="text-3xl font-semibold tracking-tight mb-8 text-slate-900">
+              Who We Serve
+            </h2>
+            <p class="text-2xl text-slate-500 mb-12 font-light">
+              We proudly partner with public and private entities to deliver
+              reliable results.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-10">
+              <div class="flex items-center gap-4">
+                <i data-lucide="check" width="22" height="22" stroke-width="2" class="text-blue-600"></i>
+                <span class="text-xl text-slate-700">Government Agencies</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i data-lucide="check" width="22" height="22" stroke-width="2" class="text-blue-600"></i>
+                <span class="text-xl text-slate-700">General Contractors</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i data-lucide="check" width="22" height="22" stroke-width="2" class="text-blue-600"></i>
+                <span class="text-xl text-slate-700">Property Managers</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i data-lucide="check" width="22" height="22" stroke-width="2" class="text-blue-600"></i>
+                <span class="text-xl text-slate-700">Property Owners</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i data-lucide="check" width="22" height="22" stroke-width="2" class="text-blue-600"></i>
+                <span class="text-xl text-slate-700">
+                  Multi-Family Operators
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i data-lucide="check" width="22" height="22" stroke-width="2" class="text-blue-600"></i>
+                <span class="text-xl text-slate-700">
+                  Real Estate Investors
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-10 rounded-2xl border shadow-sm bg-white border-slate-200">
+            <div class="flex items-center gap-3 mb-6">
+              <i data-lucide="award" width="28" height="28" stroke-width="1.5" class="text-blue-600"></i>
+              <h3 class="text-2xl font-medium tracking-tight text-slate-900">Government  &amp; Commercial Solutions</h3>
+            </div>
+            <p class="text-xl mb-8 text-slate-600 font-light">As a WBENC Certified and WOSB Registered contractor, RCS is equipped to support State and Federal agencies as well as Commercial partners. Offering Annual Tax Savings Strategies when working with RCS!</p>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <i data-lucide="file-text" width="22" height="22" stroke-width="1.5" class="mt-1 text-slate-400"></i>
+                <span class="text-xl text-slate-700">
+                  RFPs, RFQs, and bid-based work capability.
+                </span>
+              </div>
+              <div class="flex items-start gap-4">
+                <i data-lucide="users" width="22" height="22" stroke-width="1.5" class="mt-1 text-slate-400"></i>
+                <span class="text-xl text-slate-700">
+                  Scalable workforce for rapid deployment.
+                </span>
+              </div>
+              <div class="flex items-start gap-4">
+                <i data-lucide="shield-check" width="22" height="22" stroke-width="1.5" class="mt-1 text-slate-400"></i>
+                <span class="text-xl text-slate-700">
+                  On-demand OSHA 30 &amp; Compliance services.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
+    <!-- Financing Section -->
+    <section id="financing" class="py-28 bg-blue-600 text-white">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
+          <div class="max-w-4xl">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="h-12 w-12 rounded-full bg-blue-500/50 flex items-center justify-center border border-blue-400/30">
+                <i data-lucide="dollar-sign" width="22" height="22" stroke-width="2" class="text-white"></i>
+              </div>
+              <span class="font-medium tracking-wide uppercase text-sm text-blue-100">
+                Financing Available
+              </span>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-8">
+              Fund Your Project Without Delay
+            </h2>
+            <p class="text-2xl md:text-3xl leading-relaxed font-light text-blue-50">
+              Flexible financing options are available for residential
+              construction up to
+              <span class="font-semibold text-white">$500,000</span>
+              and commercial construction up to
+              <span class="font-semibold text-white">$1,000,000</span>
+              per contract.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-5">
+              <a href="tel:866-813-0920" class="inline-flex items-center justify-center rounded-lg px-8 py-4 text-lg font-semibold transition-colors bg-white text-blue-700 hover:bg-blue-50">
+                Call to Discuss Financing
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
-</html>
+    <!-- Locations -->
+    <section class="pt-28 pb-28">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="text-center mb-20">
+          <h2 class="text-3xl font-semibold tracking-tight mb-5 text-slate-900">
+            Serving the Southeast
+          </h2>
+          <p class="text-2xl text-slate-500 font-light">
+            With offices in SC and TN, we respond quickly across the region.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="p-8 rounded-2xl text-center border bg-slate-50 border-slate-100 hover:border-blue-100 transition-colors">
+            <span class="block text-5xl mb-4 font-thin text-slate-300">
+              SC
+            </span>
+            <h3 class="text-xl font-medium text-slate-900">South Carolina</h3>
+            <p class="text-slate-500 mt-2 text-lg">Statewide Coverage</p>
+          </div>
+          <div class="p-8 rounded-2xl text-center border bg-slate-50 border-slate-100 hover:border-blue-100 transition-colors">
+            <span class="block text-5xl mb-4 font-thin text-slate-300">
+              NC
+            </span>
+            <h3 class="text-xl font-medium text-slate-900">North Carolina</h3>
+            <p class="text-slate-500 mt-2 text-lg">Statewide Coverage</p>
+          </div>
+          <div class="p-8 rounded-2xl text-center border bg-slate-50 border-slate-100 hover:border-blue-100 transition-colors">
+            <span class="block text-5xl mb-4 font-thin text-slate-300">
+              TN
+            </span>
+            <h3 class="text-xl font-medium text-slate-900">Tennessee</h3>
+            <p class="text-slate-500 mt-2 text-lg">Nashville Office</p>
+          </div>
+          <div class="p-8 rounded-2xl text-center border bg-slate-50 border-slate-100 hover:border-blue-100 transition-colors">
+            <span class="block text-5xl mb-4 font-thin text-slate-300">
+              GA
+            </span>
+            <h3 class="text-xl font-medium text-slate-900">Georgia</h3>
+            <p class="text-slate-500 mt-2 text-lg">Regional Coverage</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="pb-28">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="rounded-3xl px-8 py-20 md:px-20 text-center shadow-2xl overflow-hidden relative bg-slate-900">
+           <!-- Subtle construction pattern overlay -->
+           <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+           
+          <div class="relative z-10">
+            <h2 class="text-3xl md:text-5xl font-semibold tracking-tight mb-8 text-white">
+              Let’s Build the Right Solution.
+            </h2>
+            <p class="text-2xl mb-12 max-w-3xl mx-auto text-slate-300 font-light">
+              Contact us today to discuss your construction, restoration, or
+              facility maintenance needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+              <a href="tel:866-813-0920" class="inline-flex items-center justify-center gap-3 rounded-lg px-10 py-5 text-xl font-medium hover:bg-blue-500 transition-all bg-blue-600 text-white shadow-lg shadow-blue-900/50">
+                <i data-lucide="phone" width="24" height="24" stroke-width="1.5"></i>
+                866-813-0920
+              </a>
+              <a href="mailto:info@realconstructionservices.com" class="inline-flex items-center justify-center gap-3 rounded-lg border px-10 py-5 text-xl font-medium transition-all bg-slate-800 border-slate-700 text-white hover:bg-slate-700">
+                Request Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t pt-20 pb-10 bg-white border-slate-100">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid md:grid-cols-4 gap-16 mb-20">
+          <div class="col-span-1 md:col-span-2">
+            <!-- Footer Logo -->
+            <svg viewBox="0 0 320 80" class="h-12 w-auto mb-8 opacity-90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Real Construction Services Logo">
+                <path d="M10 80V35L30 25L50 35V80" fill="#0c4a6e"></path>
+                <path d="M55 80V20L80 5L105 20V80" fill="#0284c7"></path>
+                <path d="M110 80V40L130 30L150 40V80" fill="#0c4a6e"></path>
+                <path d="M5 85C50 75 150 70 310 85" stroke="#0284c7" stroke-width="3" fill="none"></path>
+                <text x="165" y="42" font-family="Inter, sans-serif" font-weight="800" font-size="38" fill="#0f172a">REAL</text>
+                <text x="165" y="70" font-family="Inter, sans-serif" font-weight="700" font-size="21" fill="#0284c7" letter-spacing="0.5">CONSTRUCTION</text>
+                <text x="210" y="88" font-family="Inter, sans-serif" font-weight="500" font-size="10" fill="#64748b" letter-spacing="4">SERVICES</text>
+            </svg>
+            <p class="text-xl text-slate-500 max-w-lg font-light leading-relaxed">
+              Real Construction Services is a woman-owned general contracting
+              company providing construction, restoration, and facility
+              maintenance services throughout the Southeast.
+            </p>
+          </div>
+          <div class="">
+            <h4 class="font-semibold mb-6 text-slate-900 text-lg">Office Locations</h4>
+            <ul class="space-y-4 text-xl text-slate-500 font-light">
+              <li class="">Greenville, South Carolina</li>
+              <li class="">Columbia, South Carolina</li>
+              <li class="">Nashville, Tennessee</li>
+            </ul>
+          </div>
+          <div class="">
+            <h4 class="font-semibold mb-6 text-slate-900 text-lg">Contact</h4>
+            <ul class="space-y-4 text-xl text-slate-500 font-light">
+              <li>
+                <a href="tel:866-813-0920" class="hover:text-blue-600 transition-colors">
+                  866-813-0920
+                </a>
+              </li>
+              <li class="">RealConstructionServices.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t pt-10 flex flex-col md:flex-row justify-between items-center gap-6 border-slate-100">
+          <p class="text-base text-slate-400 font-light">© 2026 Real Construction Services. All rights reserved.</p>
+          <div class="flex flex-wrap gap-8 items-center">
+            <span class="text-base flex items-center gap-2 text-slate-400 font-medium">
+              <i data-lucide="badge-check" width="18" height="18" stroke-width="1.5"></i>
+              WBENC Certified
+            </span>
+            <span class="text-base flex items-center gap-2 text-slate-400 font-medium">
+              <i data-lucide="badge-check" width="18" height="18" stroke-width="1.5"></i>
+              WOSB Registered
+            </span>
+            <span class="text-base text-slate-400 font-medium">Licensed &amp; Insured</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+
+</body></html>
